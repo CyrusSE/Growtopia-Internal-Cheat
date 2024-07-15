@@ -1,0 +1,360 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="core\bot\bot.cpp" />
+    <ClCompile Include="core\dllmain.cpp" />
+    <ClCompile Include="core\globals.cpp" />
+    <ClCompile Include="core\gt.cpp" />
+    <ClCompile Include="core\minhook\buffer.c" />
+    <ClCompile Include="core\minhook\hde\hde32.c" />
+    <ClCompile Include="core\minhook\hde\hde64.c" />
+    <ClCompile Include="core\minhook\hook.c" />
+    <ClCompile Include="core\minhook\trampoline.c" />
+    <ClCompile Include="core\miniz\miniz.c" />
+    <ClCompile Include="core\sigs.cpp" />
+    <ClCompile Include="core\utils.cpp" />
+    <ClCompile Include="enet\callbacks.c" />
+    <ClCompile Include="enet\compress.c" />
+    <ClCompile Include="enet\host.c" />
+    <ClCompile Include="enet\list.c" />
+    <ClCompile Include="enet\packet.c" />
+    <ClCompile Include="enet\peer.c" />
+    <ClCompile Include="enet\protocol.c" />
+    <ClCompile Include="enet\unix.c" />
+    <ClCompile Include="enet\win32.c" />
+    <ClCompile Include="hooks\hooks.cpp" />
+    <ClCompile Include="menu\autofarm.cpp" />
+    <ClCompile Include="menu\cheats.cpp" />
+    <ClCompile Include="menu\framework.cpp" />
+    <ClCompile Include="menu\imgui\imgui.cpp" />
+    <ClCompile Include="menu\imgui\imgui_draw.cpp" />
+    <ClCompile Include="menu\imgui\imgui_widgets.cpp" />
+    <ClCompile Include="menu\imgui\impl\imgui_impl_dx9.cpp" />
+    <ClCompile Include="menu\imgui\impl\imgui_impl_win32.cpp" />
+    <ClCompile Include="menu\imwrap.cpp" />
+    <ClCompile Include="menu\enhancements.cpp" />
+    <ClCompile Include="menu\menu.cpp" />
+    <ClCompile Include="menu\PlayerPog.cpp" />
+    <ClCompile Include="PathFinder\AStar.cpp" />
+    <ClCompile Include="proton\clanlib\angle.cpp" />
+    <ClCompile Include="proton\clanlib\line_segment.cpp" />
+    <ClCompile Include="proton\clanlib\mat2.cpp" />
+    <ClCompile Include="proton\clanlib\mat3.cpp" />
+    <ClCompile Include="proton\clanlib\mat4.cpp" />
+    <ClCompile Include="proton\clanlib\origin.cpp" />
+    <ClCompile Include="proton\clanlib\rect.cpp" />
+    <ClCompile Include="proton\clanlib\vec1.cpp" />
+    <ClCompile Include="proton\clanlib\vec2.cpp" />
+    <ClCompile Include="proton\clanlib\vec3.cpp" />
+    <ClCompile Include="proton\clanlib\vec4.cpp" />
+    <ClCompile Include="proton\CRandom.cpp" />
+    <ClCompile Include="proton\MathUtils.cpp" />
+    <ClCompile Include="proton\Math\rtRect.cpp" />
+    <ClCompile Include="proton\MiscUtils.cpp" />
+    <ClCompile Include="proton\PlatformPrecomp.cpp" />
+    <ClCompile Include="proton\Variant.cpp" />
+    <ClCompile Include="proton\VariantDB.cpp" />
+    <ClCompile Include="sdk\Consts.cpp" />
+    <ClCompile Include="sdk\sdk.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\Pro Project\Automic-main\jni\rtparser.h" />
+    <ClInclude Include="core\bot\bot.h" />
+    <ClInclude Include="core\discord_webhook.h" />
+    <ClInclude Include="core\globals.h" />
+    <ClInclude Include="core\gt.h" />
+    <ClInclude Include="core\json.hpp" />
+    <ClInclude Include="core\minhook\buffer.h" />
+    <ClInclude Include="core\minhook\hde\hde32.h" />
+    <ClInclude Include="core\minhook\hde\hde64.h" />
+    <ClInclude Include="core\minhook\hde\pstdint.h" />
+    <ClInclude Include="core\minhook\hde\table32.h" />
+    <ClInclude Include="core\minhook\hde\table64.h" />
+    <ClInclude Include="core\minhook\hook.h" />
+    <ClInclude Include="core\minhook\trampoline.h" />
+    <ClInclude Include="core\miniz\miniz.h" />
+    <ClInclude Include="core\nlhomann\json.hpp" />
+    <ClInclude Include="core\sigs.hpp" />
+    <ClInclude Include="core\utils.h" />
+    <ClInclude Include="d3d\Color.hpp" />
+    <ClInclude Include="d3d\DrawingLUL.h" />
+    <ClInclude Include="enet\include\callbacks.h" />
+    <ClInclude Include="enet\include\enet.h" />
+    <ClInclude Include="enet\include\list.h" />
+    <ClInclude Include="enet\include\protocol.h" />
+    <ClInclude Include="enet\include\time.h" />
+    <ClInclude Include="enet\include\types.h" />
+    <ClInclude Include="enet\include\unix.h" />
+    <ClInclude Include="enet\include\utility.h" />
+    <ClInclude Include="enet\include\win32.h" />
+    <ClInclude Include="hooks\hooks.h" />
+    <ClInclude Include="hooks\ProcessTankUpdatePacket.h" />
+    <ClInclude Include="hooks\SendPacket.h" />
+    <ClInclude Include="hooks\SendPacketRaw.h" />
+    <ClInclude Include="hooks\Update.h" />
+    <ClInclude Include="menu\imgui\impl\fonts\droidsans.ttf.h" />
+    <ClInclude Include="menu\imgui\impl\fonts\icons_font_awesome.ttf.h" />
+    <ClInclude Include="menu\imgui\impl\fonts\icons_kenney.ttf.h" />
+    <ClInclude Include="menu\imgui\impl\fonts\robotomono_regular.ttf.h" />
+    <ClInclude Include="menu\imgui\impl\fonts\roboto_regular.ttf.h" />
+    <ClInclude Include="menu\imgui\impl\shaders\fs_imgui_color.bin.h" />
+    <ClInclude Include="menu\imgui\impl\shaders\fs_imgui_cubemap.bin.h" />
+    <ClInclude Include="menu\imgui\impl\shaders\fs_imgui_image.bin.h" />
+    <ClInclude Include="menu\imgui\impl\shaders\fs_imgui_image_swizz.bin.h" />
+    <ClInclude Include="menu\imgui\impl\shaders\fs_imgui_latlong.bin.h" />
+    <ClInclude Include="menu\imgui\impl\shaders\fs_imgui_texture.bin.h" />
+    <ClInclude Include="menu\imgui\impl\shaders\fs_ocornut_imgui.bin.h" />
+    <ClInclude Include="menu\imgui\impl\shaders\vs_imgui_color.bin.h" />
+    <ClInclude Include="menu\imgui\impl\shaders\vs_imgui_cubemap.bin.h" />
+    <ClInclude Include="menu\imgui\impl\shaders\vs_imgui_image.bin.h" />
+    <ClInclude Include="menu\imgui\impl\shaders\vs_imgui_latlong.bin.h" />
+    <ClInclude Include="menu\imgui\impl\shaders\vs_imgui_texture.bin.h" />
+    <ClInclude Include="menu\imgui\impl\shaders\vs_ocornut_imgui.bin.h" />
+    <ClInclude Include="menu\imwrap.h" />
+    <ClInclude Include="menu\imgui\imconfig.h" />
+    <ClInclude Include="menu\imgui\imgui.h" />
+    <ClInclude Include="menu\imgui\imgui_internal.h" />
+    <ClInclude Include="menu\imgui\impl\imgui_impl_dx9.h" />
+    <ClInclude Include="menu\imgui\impl\imgui_impl_win32.h" />
+    <ClInclude Include="menu\imgui\imstb_rectpack.h" />
+    <ClInclude Include="menu\imgui\imstb_textedit.h" />
+    <ClInclude Include="menu\imgui\imstb_truetype.h" />
+    <ClInclude Include="menu\menu.h" />
+    <ClInclude Include="PathFinder\PathFinder.h" />
+    <ClInclude Include="PathFinder\Location.h" />
+    <ClInclude Include="proton\bitmap.h" />
+    <ClInclude Include="proton\clanlib\angle.h" />
+    <ClInclude Include="proton\clanlib\circle.h" />
+    <ClInclude Include="proton\clanlib\cl_math.h" />
+    <ClInclude Include="proton\clanlib\line_segment.h" />
+    <ClInclude Include="proton\clanlib\mat2.h" />
+    <ClInclude Include="proton\clanlib\mat3.h" />
+    <ClInclude Include="proton\clanlib\mat4.h" />
+    <ClInclude Include="proton\clanlib\origin.h" />
+    <ClInclude Include="proton\clanlib\point.h" />
+    <ClInclude Include="proton\clanlib\rect.h" />
+    <ClInclude Include="proton\clanlib\size.h" />
+    <ClInclude Include="proton\clanlib\vec1.h" />
+    <ClInclude Include="proton\clanlib\vec2.h" />
+    <ClInclude Include="proton\clanlib\vec3.h" />
+    <ClInclude Include="proton\clanlib\vec4.h" />
+    <ClInclude Include="proton\CRandom.h" />
+    <ClInclude Include="proton\MathUtils.h" />
+    <ClInclude Include="proton\Math\rtPlane.h" />
+    <ClInclude Include="proton\Math\rtRect.h" />
+    <ClInclude Include="proton\MiscUtils.h" />
+    <ClInclude Include="proton\NetHTTP.h" />
+    <ClInclude Include="proton\PlatformPrecomp.h" />
+    <ClInclude Include="proton\PlatformSetup.h" />
+    <ClInclude Include="proton\RTFileFormat.h" />
+    <ClInclude Include="proton\RTParam.hpp" />
+    <ClInclude Include="sdk\NetObjectManager.h" />
+    <ClInclude Include="sdk\ResourceManager.h" />
+    <ClInclude Include="sdk\Surface.h" />
+    <ClInclude Include="proton\Variant.h" />
+    <ClInclude Include="proton\variant2.hpp" />
+    <ClInclude Include="proton\VariantDB.h" />
+    <ClInclude Include="proton\vector2.hpp" />
+    <ClInclude Include="sdk\Consts.h" />
+    <ClInclude Include="sdk\player\AvatarRenderData.h" />
+    <ClInclude Include="sdk\ENetClient.hpp" />
+    <ClInclude Include="sdk\EntityComponent.h" />
+    <ClInclude Include="sdk\GameLogic.h" />
+    <ClInclude Include="sdk\GameUpdatePacket.h" />
+    <ClInclude Include="sdk\player\NetAvatar.h" />
+    <ClInclude Include="sdk\player\PlayerItems.h" />
+    <ClInclude Include="sdk\sdk.h" />
+    <ClInclude Include="sdk\world\ParticleSystem.h" />
+    <ClInclude Include="sdk\world\Tile.h" />
+    <ClInclude Include="sdk\world\World.h" />
+    <ClInclude Include="sdk\world\WorldCamera.h" />
+    <ClInclude Include="sdk\world\WorldObject.h" />
+    <ClInclude Include="sdk\world\WorldObjectMap.h" />
+    <ClInclude Include="sdk\world\WorldRenderer.h" />
+    <ClInclude Include="sdk\world\WorldTileMap.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="inzernal.def" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{4bdaf308-28d1-4924-a3f9-64c318877c45}</ProjectGuid>
+    <RootNamespace>INZERNAL</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.22621.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <SpectreMitigation>false</SpectreMitigation>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <IntDir>$(SolutionDir)obj\INZERNALD\</IntDir>
+    <OutDir>$(SolutionDir)bin\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(SolutionDir)bin\</OutDir>
+    <IntDir>$(SolutionDir)obj\INZERNAL\</IntDir>
+    <IncludePath>E:\direct x sdk\Include;$(IncludePath)</IncludePath>
+    <LibraryPath>E:\direct x sdk\Lib\x64;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ModuleDefinitionFile>inzernal.def</ModuleDefinitionFile>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ModuleDefinitionFile>inzernal.def</ModuleDefinitionFile>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level1</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_SILENCE_CXX17_ITERATOR_BASE_CLASS_DEPRECATION_WARNING;_HAS_AUTO_PTR_ETC=1;NDEBUG;_CONSOLE;_EXPORTS;_CRT_SECURE_NO_WARNINGS;_WINDOWS;_USRDLL;WINDOWS_IGNORE_PACKING_MISMATCH;_WINSOCK_DEPRECATED_NO_WARNINGS;IMGUI_IMPL_WIN32_DISABLE_GAMEPAD;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>false</ConformanceMode>
+      <AdditionalIncludeDirectories>$(ProjectDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <StructMemberAlignment>Default</StructMemberAlignment>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <OmitFramePointers>false</OmitFramePointers>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ModuleDefinitionFile>inzernal.def</ModuleDefinitionFile>
+      <AdditionalDependencies>d3d9.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention>false</DataExecutionPrevention>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level1</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;_CRT_SECURE_NO_WARNINGS;_WINDOWS;_USRDLL;WINDOWS_IGNORE_PACKING_MISMATCH;_WINSOCK_DEPRECATED_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(ProjectDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <WholeProgramOptimization>false</WholeProgramOptimization>
+      <StructMemberAlignment>Default</StructMemberAlignment>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <LanguageStandard>Default</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <LinkTimeCodeGeneration>Default</LinkTimeCodeGeneration>
+      <AdditionalDependencies>d3d9.lib;ws2_32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <ModuleDefinitionFile>inzernal.def</ModuleDefinitionFile>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention>false</DataExecutionPrevention>
+      <AdditionalOptions>/NOIMPLIB %(AdditionalOptions)</AdditionalOptions>
+      <ImportLibrary />
+    </Link>
+    <PostBuildEvent>
+      <Command>cd $(SolutionDir)bin\
+del *.exp
+del *.lib
+del *.pdb
+</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
